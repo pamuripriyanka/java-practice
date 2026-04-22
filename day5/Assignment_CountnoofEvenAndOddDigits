@@ -1,0 +1,47 @@
+package day5;
+
+public class Assignment_CountnoofEvenAndOddDigits 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		/*
+		 * count number of even and odd digits in a number
+		 * input: 123456789
+		 * output:x even y odd
+		 */
+		
+		int num = 123456789;   //Example number
+        int evenCount = 0;
+        int oddCount = 0;
+
+        int temp = Math.abs(num); //handle negative numbers
+
+        if (temp == 0) 
+        {
+            evenCount = 1; //0 is considered even
+        } 
+        else 
+        {
+            while (temp > 0) 
+            {
+                int digit = temp % 10; //extract last digit
+                
+                if (digit % 2 == 0) 
+                {
+                    evenCount++;
+                } 
+                else 
+                {
+                    oddCount++;
+                }
+                temp /= 10; //remove last digit
+            }
+        }
+
+        System.out.println("Number: " + num);
+        System.out.println("Even digits: " + evenCount);
+        System.out.println("Odd digits: " + oddCount);
+    }
+}
