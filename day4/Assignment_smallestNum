@@ -1,0 +1,42 @@
+package day4;
+
+public class Assignment_SmallestNumber 
+{
+
+	public static void main(String[] args) 
+	{
+		int a=80, b=40, c=30;
+		
+		if(a<b && a<c)
+		{
+			System.out.println("a is the smallest number");
+		}
+		else if(b<a && b<c)
+		{
+			System.out.println("b is the smallest number");
+		}
+		else 
+		{
+			System.out.println("c is the smallest number");
+		}
+		
+
+		
+		/*
+		if(a<b || a<c)
+		{
+			System.out.println("a is the smallest number");
+		}
+		else if(b<a || b<c) // true || false = true. so, b is the smallest number. This is the logical error
+		{
+			System.out.println("b is the smallest number");
+		}
+		else 
+		{
+			System.out.println("c is the smallest number");
+		}
+		*/
+
+	}
+
+}
