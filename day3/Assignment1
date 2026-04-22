@@ -1,0 +1,33 @@
+package day3;
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+	
+		/*
+			int a= 10;
+			int b= 20;
+			//swapping two values with out using temp variable 
+			//using arithmetic ope + variables
+			
+			b= b-a;
+			a= b+a;
+			System.out.println("After Swapping a and b: "+a+" "+(b));
+		*/
+		
+		
+		//using temp variable using assign operator
+		
+		int a = 10, b = 20;
+
+        System.out.println("Before swap: a = " + a + " b = " + b);
+
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("After swap: a = " + a + " b = " + b);
+
+	}
+
+}
